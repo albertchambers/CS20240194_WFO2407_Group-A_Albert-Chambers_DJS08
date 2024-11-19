@@ -1,5 +1,7 @@
 // @ts-check
 
+import React from 'react';
+
 /**
  * Challenge:
  * Bootstrap the VanLife project by creating the first 2 routes:
@@ -16,11 +18,9 @@
  * linked in the slides.
  */
 
-function App() {
+export default function App() {
 
   return (
     <h1>Start here</h1>
   )
 }
-
-export default App
