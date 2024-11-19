@@ -10,7 +10,6 @@ export default function Header() {
   return (
     <header className="header">
       <div className="logo">
-        <h1>My App</h1> {/* You can replace this with an image or other logo */}
       </div>
 
       <nav>
