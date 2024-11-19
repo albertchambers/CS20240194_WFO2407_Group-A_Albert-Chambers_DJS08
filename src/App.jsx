@@ -1,6 +1,11 @@
 // @ts-check
 
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+
+import Home from '../pages/Home';
+import About from '../pages/About';
+import Navbar from '../components/Navbar';
 
 /**
  * Challenge:
@@ -17,10 +22,17 @@ import React from 'react';
  * Review challenge: do all the CSS yourself based on the design
  * linked in the slides.
  */
-
 export default function App() {
-
   return (
-    <h1>Start here</h1>
-  )
+    <div>
+      {/* Shared Navbar */}
+      <Navbar />
+
+      {/* Routes for the app */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </div>
+  );
 }
