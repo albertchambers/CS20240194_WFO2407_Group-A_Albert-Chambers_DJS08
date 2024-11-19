@@ -1,12 +1,14 @@
 // @ts-check
 
 import React from 'react';
+import { Link } from "react-router-dom"
 
 export default function Home() {
   return (
-    <div>
-      <h1>Welcome to the Home Page</h1>
-      <p>This is the main landing page of the application.</p>
+    <div className="home-container">
+        <h1>You got the travel plans, we got the travel vans.</h1>
+        <p>Add adventure to your life by joining the #vanlife movement. Rent the perfect van to make your perfect road trip.</p>
+        <Link to="vans">Find your van</Link>
     </div>
   );
 }

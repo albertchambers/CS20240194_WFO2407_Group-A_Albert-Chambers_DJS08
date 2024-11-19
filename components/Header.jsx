@@ -2,14 +2,15 @@
 
 import React from 'react';
 import Navbar from './Navbar';
+import { Link } from 'react-router-dom';
 
 
 export default function Header() {
   return (
-    <header className="header">
+    <header>
 
-      <div className="logo">
-        
+      <div>
+        <Link className="site-logo" to="/">#VanLife</Link>
       </div>
 
       <Navbar />
